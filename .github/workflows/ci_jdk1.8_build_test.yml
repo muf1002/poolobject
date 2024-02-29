@@ -16,4 +16,7 @@ jobs:
         run: ant -noinput -buildfile build.xml
       - name: Test with Ant
         run: ant -buildfile build.xml test
-      - uses: codecov/codecov-action@v1
+      - uses: codecov/codecov-action@v4.0.1
+        with:
+            token: ${{ secrets.CODECOV_TOKEN }}
+            slug: muf1002/poolobject
