@@ -98,5 +98,15 @@ public class ReusablePoolTest {
 		}
 	
 	}
+	
+    @Test
+    public void testUtil() {
+        Reusable reusable = new Reusable();
+        String result = reusable.util();
+
+        assertNotNull(result);
+        assertTrue(result.contains(reusable.hashCode() + ""));
+        assertTrue(result.contains("Uso del objeto Reutilizable"));
+    }
 
 }
