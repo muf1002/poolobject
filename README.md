@@ -16,8 +16,14 @@ Authors:
 - Marcos Ubierna Fernández
 - David Merinero Porres
 
+Introducción
+============
+En la práctica se va simular un pequeño desarrollo de un producto software para realizar mediciones sobre él.
+El objetivo es establecer un caso de estudio dummy que sirva para caracterizar y evaluar tanto el producto
+desarrollado como el proceso seguido.
+
 Objetivos
-=======
+=========
 - Comprender los objetivos de medición relacionados con la caracterización y la evaluación de
 productos, procesos y recursos software.
 - Comprender, aplicar y analizar técnicas de medición sobre entidades de productos software
@@ -25,14 +31,8 @@ relacionados con conjuntos de pruebas de software.
 - Comprender, aplicar y analizar medidas relacionadas sobre entidades de proceso y recursos de
 prueba del software.
 
-Enunciado
-=======
-En la práctica se va simular un pequeño desarrollo de un producto software para realizar mediciones sobre él.
-El objetivo es establecer un caso de estudio dummy que sirva para caracterizar y evaluar tanto el producto
-desarrollado como el proceso seguido.
-
 Cuestiones
-=======
+==========
 + ¿Se ha realizado trabajo en equipo?
   - Sí, ya que hemos realizado los commits de forma alterna como se puede observar en el historial de commits.
 ![image](https://github.com/muf1002/poolobject/assets/74540500/a2dec8d2-3213-40e9-b9cf-ecaa0d219120)
@@ -54,4 +54,6 @@ Cuestiones
   - Sí, ya que se ha realizado una integración continua correcta. En el apartado de Actions se puede comprobar. 
 ![image](https://github.com/muf1002/poolobject/assets/74540500/ea283629-f684-4f59-a8f2-bb439034c263)
 
-
+Conclusiones
+============
+Nos ha parecido una práctica muy útil, ya que nos enseña a implementar una integración continua que podemos usar en próximos proyectos y nos ha ayudado a conocer la implementación de insignias(badgets) en Github. También hemos comprendido el concepto de cobertura(coverage) que personamente no habíamos visto anteriormente.
