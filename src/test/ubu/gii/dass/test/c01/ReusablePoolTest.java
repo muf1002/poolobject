@@ -52,7 +52,26 @@ public class ReusablePoolTest {
 	 */
 	@Test
 	public void testAcquireReusable() {
-		//fail("Not yet implemented");
+	    try {
+	        // Primera instancia.
+	        Reusable reusable1 = pool.acquireReusable();
+	        assertNotNull(reusable1);
+	        assertTrue(reusable1 instanceof Reusable);
+
+	        // Segunda instancia.
+	        Reusable reusable2 = pool.acquireReusable();
+	        assertNotNull(reusable2);
+	        assertTrue(reusable2 instanceof Reusable);
+
+	        // Tercera instancia (no hay).
+	        pool.acquireReusable(); // Lanza NotFreeInstanceException.
+
+	        // Si no lanza la excepcion falla el test.
+	        fail("Se esperaba una excepción NotFreeInstanceException, pero no se lanzó.");
+	    } catch (NotFreeInstanceException e) {
+	    	// Entra al catch al lanzar la excepción.
+	        assertNotNull(e);
+	    }
 	}
 
 	/**
