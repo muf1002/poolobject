@@ -13,4 +13,4 @@ jobs:
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
           
-          coverage-reports: ./src
+          coverage-reports: ./src/**/*.java
